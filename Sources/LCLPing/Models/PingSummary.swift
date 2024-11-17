@@ -15,7 +15,7 @@ import NIOCore
 
 /// A summary of the ping test, including the min, max, average, median, standard deviation,
 /// and detailed view of each test result.
-public struct PingSummary: Equatable, Encodable {
+public struct PingSummary: Equatable, Encodable,@unchecked Sendable {
     /// The minimum in the test results.
     public let min: Double
 
